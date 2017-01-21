@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+
+<script>
+function Fruit(theColor,theName){
+    this.theColor = theColor;
+    this.theName = theName;
+
+    this.details= function(){
+        document.write("FRuit is "+this.theColor+this.theName);
+    }
+}  
+
+var mango = new Fruit('green','Mango');
+var apple = new Fruit('red','Apple');
+
+//mango.details();
+//apple.details();
+
+</script>
+
+<script type="text/javascript">
+    //prototype pattern
+    function Fruits(){
+
+    }
+
+    Fruits.prototype.color = "Yellow";
+    Fruits.prototype.name = "Orange";
+    Fruits.prototype.showDetails = function(){
+        document.write(this.name);
+    }
+
+    var newFruit = new Fruits();
+    newFruit.showDetails();
+</script>
+
+</body>
+</html>

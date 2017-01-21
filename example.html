@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>What Can JavaScript Do?</h1>
+
+<p id="demo">JavaScript can change HTML content.</p>
+<div>
+  <img id="myIamge" src="img.jpg" style="width:100px">
+</div>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button>
+<button type="button" onclick="document.getElementById('demo').style.color='blue' ">Change Color!</button>
+<button type="button" onclick="document.getElementById('myIamge').style.display='none' ">Hide Image!</button>
+<button type="button" onclick="document.getElementById('myIamge').style.display='block' ">Show Image!</button>
+
+<div>
+<script type="text/javascript">
+    var b = document.getElementById('demo').innerHTML;
+	document.write(b);
+</script>
+</div>
+
+</body>
+</html>
